@@ -1,14 +1,5 @@
 services:
 
-  beszel:
-    image: 'henrygd/beszel'
-    container_name: 'beszel'
-    restart: unless-stopped
-    ports:
-      - '8090:8090'
-    volumes:
-      - ./beszel_data:/beszel_data
-
   beszel-agent:
     image: 'henrygd/beszel-agent'
     container_name: 'beszel-agent'
